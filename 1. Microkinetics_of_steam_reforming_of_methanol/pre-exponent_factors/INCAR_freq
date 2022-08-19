@@ -1,0 +1,48 @@
+General:
+#Startparameter for this run:
+
+ISTART = 0
+LCHARG = .FALSE.
+LWAVE = .FALSE
+NPAR = 8
+
+#Electronic Rlaxation 1
+
+ENCUT =380 
+PREC = Accurate
+EDIFF = 1E-8
+ISPIN = 2
+
+#Ionic relaxion
+
+ISIF = 2
+EDIFFG = -1E-10
+NSW = 22 
+NELM = 300
+NELMIN = 4
+POTIM = 0
+IBRION = 3
+#ICHARGE = 2
+
+#DOS related values:
+
+ISMEAR = -1
+SIGMA = 0.1
+#LORBIT = 12
+#RWIGS = 1.286 0.863
+#NPAR = 1
+
+#Electronic relaxation 2
+
+ALGO = VeryFast
+
+#Exchange correlation treatment:
+
+GGA = 91
+
+#NEB parameter
+
+ICHAIN = 1
+#IMAGES = 6
+IOPT = 2
+

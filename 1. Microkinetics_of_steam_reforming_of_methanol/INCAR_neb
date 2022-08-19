@@ -1,0 +1,61 @@
+General:
+#Startparameter for this run:
+
+ISTART = 0
+LCHARG = .FALSE.
+LWAVE = .FALSE.
+NCORE = 2
+
+#Electronic Rlaxation 1
+
+ENCUT =380 
+PREC = Accurate
+LREAL = .FALSE
+EDIFF = 1E-4
+ISPIN = 2
+
+#Ionic relaxion
+
+ISIF = 2
+EDIFFG = -0.03
+NSW = 500
+NELM = 100
+NELMIN = 4
+POTIM = 0
+IBRION = 3
+#ICHARGE = 2
+
+#DOS related values:
+
+EMIN = 10.0 ;EMAX=-10.0 #energy-range for DOS
+ISMEAR = -1
+SIGMA = 0.1
+#LORBIT = 12
+#RWIGS = 1.286 0.863
+#NPAR = 1
+
+#Electronic relaxation 2
+
+
+ALGO = VeryFast
+
+#Exchange correlation treatment:
+
+GGA = BO
+PARAM1 = 0.18333333
+PARAM2 = 0.22000000 
+VOSKOWN = 0  #Vosko Wilk Nusair interpolartion
+
+#VDW parameter
+
+#ISPIN = 2
+#LVDW = .TRUE.
+LUSE_VDW = .TRUE.
+AGGAC = 0.00
+
+#NEB parameter
+
+ICHAIN = 0
+IMAGES = 6
+IOPT = 2
+
